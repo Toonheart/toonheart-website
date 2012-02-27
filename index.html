@@ -1,0 +1,146 @@
+﻿<!--Force IE6 into quirks mode with this comment tag-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Toonheart Studios</title>
+<style type="text/css">
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow-y: scroll;
+height: 100%; 
+max-height: 100%; 
+}
+
+#framecontentLeft, #framecontentRight{
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 0px; /*Width of left frame div*/
+height: 100%;
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: brown;
+}
+
+#framecontentRight{
+left: auto;
+right: 0; 
+width: 0px; /*Width of right frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: brown;
+}
+
+#maincontent{
+position: relative; 
+top: 0;
+left: 0px; /*Set left value to WidthOfLeftFrameDiv*/
+right: 0px; /*Set right value to WidthOfRightFrameDiv*/
+bottom: 0;
+overflow: hidden; 
+background: grey;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+.mail {
+	position:absolute;
+	bottom:140px; /* in conjunction with left property, decides the text position */
+	left:430px;
+	width:100%; /* optional, though better have one */
+
+}
+
+.mailid {
+position:absolute;
+	bottom:20px; /* in conjunction with left property, decides the text position */
+	left:80px;
+	width:300px; /* optional, though better have one */
+
+}
+
+.button {
+position:absolute;
+	bottom:19px; /* in conjunction with left property, decides the text position */
+	left:400px;
+	width:50px; /* optional, though better have one */
+
+}
+
+.twitter {
+position:absolute;
+	bottom:60px; /* in conjunction with left property, decides the text position */
+	left:350px;
+	width:100% /* optional, though better have one */
+
+}
+
+.facebook {
+position:absolute;
+	bottom:60px; /* in conjunction with left property, decides the text position */
+	left:750px;
+	width:100%; /* optional, though better have one */
+
+}
+
+* html body{ /*IE6 hack*/
+padding: 0 150px 0 200px; /*Set value to (0 WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="framecontentLeft">
+<div class="innertube">
+</div>
+</div>
+
+<div id="framecontentRight">
+<div class="innertube">
+</div>
+</div>
+
+
+<div id="maincontent"> 
+<div class="innertube">
+
+<p style="text-align: center"><img src = "images/error404.png" alt = "" width = "844" height = "920" ></p>
+</div>
+<div class = "twitter">
+<a href = "http://twitter.com/toonheart"><img src = "images/twitter.png" width = "15%" height = "10%"> </a>
+</div>
+
+<div class = "facebook">
+<a href = "http://facebook.com/Toonheart"><img src = "images/fb.png" width = "15%" height = "12%"> </a>
+</div>
+
+
+<div class = "mail">
+<img src = "images/mail.png" alt = "Enter Your Email Address" width = "5%" height = "10%">
+
+
+
+<form name="registerform" action="submit1.php" method="post">
+<input type="text" name="email" class="mailid" id="email" size="35">
+<input type="submit" value="Do it !" name="submit" id="submit" class="button" >
+
+</div>
+</div>
+
+
+
+</body>
+</html>
